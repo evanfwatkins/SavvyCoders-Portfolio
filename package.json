@@ -1,0 +1,24 @@
+{
+  "name": "EvanWatkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfwatkins/SavvyCoders-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanfwatkins/SavvyCoders-Portfolio/issues"
+  },
+  "homepage": "https://github.com/evanfwatkins/SavvyCoders-Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}
