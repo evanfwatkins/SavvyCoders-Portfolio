@@ -3,7 +3,7 @@
 
 ![my face](https://pbs.twimg.com/profile_images/1028551746577223687/L727p325_400x400.jpg)
 
-I'm a _junior developer_ enrolled in the January __Savvy Coders__ Class trying to learn some new skills.
+I'm a _junior developer_ enrolled in the January __Savvy Coders__ class trying to learn some new skills.
 
 
 # Contact me with these sources
