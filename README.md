@@ -8,5 +8,5 @@ I'm a _junior developer_ enrolled in the January __Savvy Coders__ Class trying t
 
 # Contact me with these sources
 1. [Insta](https://www.instagram.com/watkinst_45/?hl=en)
-2. [GitHub](hhtps://github.com/Evanwatkins)
+2. [GitHub](hhtps://github.com/evanfwatkins)
 3. [Twitter](https://twitter.com/Evanwatkins5)
