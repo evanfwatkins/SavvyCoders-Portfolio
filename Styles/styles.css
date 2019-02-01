@@ -1,0 +1,36 @@
+
+h1 {
+    background-color: aqua;
+    font-family: cursive;
+}
+
+h2 {
+    color:black;
+    font-family: cursive;
+}
+
+h3 {
+    background-color:darkslateblue;
+}
+
+p {
+    color: aqua;
+    background-color: #ff69b4
+}
+
+
+li {
+    color: #ff69b4;
+}
+
+.tomatify {
+    color: red;
+}
+
+.aquify {
+    background-color: aqua;
+}
+
+#content {
+    color: silver
+}
