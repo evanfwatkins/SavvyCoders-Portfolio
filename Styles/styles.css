@@ -1,7 +1,22 @@
+/* Margin - top right bottom left */
+
+
+
+* {
+    border: solid 1px black;
+    pad
+}
+
 
 h1 {
+    text-align: center;
+    margin: 15px;
+    padding: 25px;
+    height: 75px;
+    max-width: 960px;
     background-color: aqua;
     font-family: cursive;
+
 }
 
 h2 {
@@ -18,7 +33,9 @@ p {
     background-color: #ff69b4
 }
 
-
+ol {
+    max-width: 960px;
+}
 li {
     color: #ff69b4;
 }
@@ -33,4 +50,10 @@ li {
 
 #content {
     color: silver
+}
+
+.container {
+    margin: 50px;
+    max-width: 960px;
+    padding: 50px;
 }
