@@ -1,17 +1,9 @@
 /* Margin - top right bottom left */
 
-
-
-* {
-    border: solid 1px black;
-    pad
-}
-
-
 h1 {
     text-align: center;
     margin: 15px;
-    padding: 25px;
+    padding: 10px;
     height: 75px;
     max-width: 960px;
     background-color: aqua;
@@ -33,11 +25,23 @@ p {
     background-color: #ff69b4
 }
 
+
+ul {
+    text-align: left;
+    padding: 0;
+}
+
 ol {
     max-width: 960px;
 }
-li {
+
+#navigation li {
     color: #ff69b4;
+    display: inline;
+}
+
+li:first-child {
+    margin-right: 25px;
 }
 
 .tomatify {
