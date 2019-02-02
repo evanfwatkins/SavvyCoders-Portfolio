@@ -1,14 +1,17 @@
 /* Margin - top right bottom left */
 
+* {
+    background-color: ;
+    }
+
 h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 45px;
     text-align: center;
     margin: 15px;
     padding: 10px;
     height: 75px;
     max-width: 960px;
-    background-color: aqua;
-    font-family: cursive;
-
 }
 
 h2 {
@@ -44,20 +47,22 @@ li:first-child {
     margin-right: 25px;
 }
 
-.tomatify {
-    color: red;
+.blueback {
+    color: navy;
 }
 
-.aquify {
-    background-color: aqua;
-}
 
 #content {
-    color: silver
+    color: navy;
 }
 
 .container {
     margin: 50px;
     max-width: 960px;
     padding: 50px;
+}
+
+.navfont {
+    text-decoration-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
