@@ -1,4 +1,14 @@
-/* Margin - top right bottom left */
+/* Whole background image */
+
+/*  
+html { 
+    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4Ykzv3Fqxikmw1fjl/driving-in-beverly-hills-california-under-iconic-palm-trees_n_lmiro5l__F0011.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+*/
 
 * {
     background-color: ;
@@ -37,7 +47,7 @@ ol {
 }
 
 a {
-    margin-left: 25px;
+    margin: 5px;
     border: solid;
     border-radius: 5px;
     padding: 10px;
@@ -53,7 +63,6 @@ a {
 
 li:first-child {
     margin-right:0px;
-    margin-left: 25px;
     display: inline;
 }
 
@@ -61,6 +70,8 @@ div {
     margin-left: 300px;
     max-width: 960px;
 }
+
+
 
 .blueback {
     color: navy;
@@ -81,6 +92,14 @@ div {
 .navfont {
     text-decoration-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+form {
+    text-align: center;
+}
+
+div.content {
 
 }
 
