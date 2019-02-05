@@ -47,6 +47,9 @@ a {
 #navigation li {
     display: inline;
 }
+li:hover {
+    background: navy;
+}
 
 li:first-child {
     margin-right:0px;
