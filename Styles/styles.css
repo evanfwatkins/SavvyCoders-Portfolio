@@ -1,20 +1,25 @@
 /* Whole background image */
 
-/*  
+ /*
 html { 
-    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4Ykzv3Fqxikmw1fjl/driving-in-beverly-hills-california-under-iconic-palm-trees_n_lmiro5l__F0011.png) no-repeat center center fixed; 
+    background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-*/
+  */
+
+html { 
+    background-color: black
+  }
 
 * {
     background-color: ;
 }
 
 h1 {
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: 45px;
     text-align: center;
@@ -24,13 +29,12 @@ h1 {
 }
 
 h2 {
-    color:black;
+    color:white;
     font-family: cursive;
     text-align: center;
-    margin-left: 50px;
 }
 p {
-    color: navy;
+    color: white;
     text-align: center;
 }
 
@@ -46,6 +50,7 @@ ol {
 }
 
 a {
+    color: white;
     margin: 5px;
     border: solid;
     border-radius: 5px;
@@ -67,18 +72,16 @@ li:first-child {
 
 div {
     max-width: 960px;
-
 }
 
 
-
 .blueback {
-    color: navy;
+    color: white;
     text-align: center;
 }
 
 #content {
-    color: navy;
+    color: white;
     margin: 50px;
 }
 
@@ -96,10 +99,15 @@ div {
 
 form {
     text-align: center;
+    color: white;
 }
 
-div.content {
+.supremeimg {
+    margin-left: 37%;
+}
 
+.homeimg {
+    margin-left: 300px;
 }
 
 

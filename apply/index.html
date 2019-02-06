@@ -30,32 +30,28 @@
             <h1>Apply for the Spring Season Drop</h1>
             <h2>Register for the drop</h2>
             
-            <form action="/action_page.php" method="POST">
+            <form action="https://formspree.io/evanfwatkins@gmail.com" method="POST">
             
                 <label for="fname">First Name</label>
-            <input type="text" name="first-name" id="" value=""> 
+            <input type="text" name="first-name" id="" value="" required> 
                 <br>
                 <br>
 
             <label for="lname">Last Name</label>
-            <input type="text" name="last-name" value=""> 
+            <input type="text" name="last-name" value="" required> 
                 <br>
                 <br>
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required> 
+            <input type="email" name="email" id="email" value="" required> 
                 <br>
                 <br>
 
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone"> 
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
                 <br>
                 <br>
 
-            <label for="message">Which peices are you trying to cop?</label> <br>
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Please enter your message here"></textarea> 
-                <br>
-            
             <input type="submit" value="Apply">
             <input type="reset" value="Restart">
             </form> 
