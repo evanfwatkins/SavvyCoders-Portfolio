@@ -1,18 +1,16 @@
 /* Whole background image */
 
- /*
-html { 
+/* html { 
     background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-  */
+  } */
 
-html { 
+html {
     background-color: black
-  }
+}
 
 * {
     background-color: ;
@@ -20,7 +18,7 @@ html {
 
 h1 {
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     text-align: center;
     padding: 10px;
@@ -29,20 +27,20 @@ h1 {
 }
 
 h2 {
-    color:white;
+    color: white;
     font-family: cursive;
     text-align: center;
 }
+
 p {
     color: white;
     text-align: center;
 }
 
-
 ul {
+    color: white;
     text-align: center;
     padding: 0;
-    
 }
 
 ol {
@@ -52,28 +50,20 @@ ol {
 a {
     color: white;
     margin: 5px;
-    border: solid;
-    border-radius: 5px;
+    /* border: solid;
+    border-radius: 5px; */
     padding: 10px;
     text-decoration: none;
 }
 
-
-
-#navigation li {
-    display: inline;
-}
-
-
 li:first-child {
-    margin-right:0px;
+    margin-right: 0px;
     display: inline;
 }
 
 div {
     max-width: 960px;
 }
-
 
 .blueback {
     color: white;
@@ -94,7 +84,34 @@ div {
 .navfont {
     text-decoration-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* position: fixed; */
+    width: 100%;
+}
 
+#navigation {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 223px;
+}
+
+
+
+#navigation>ul>li {
+    display: inline;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#navigation>ul>li>ul {
+    position: fixed;
+    display: none;
+    background-color: #535353;
+    top: 50px;
+    left: 770px;
 }
 
 form {
@@ -102,12 +119,17 @@ form {
     color: white;
 }
 
-.supremeimg {
-    margin-left: 37%;
-}
-
 .homeimg {
     margin-left: 300px;
 }
 
+.header {
+    background-color: white;
+    padding-top: 141px;
+    background-color: black;
+}
 
+
+#navigation > ul > li:hover > ul {
+    display: block;
+}
