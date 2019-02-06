@@ -1,16 +1,16 @@
 /* Whole background image */
 
-/* html { 
+ html { 
     background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  } */
+  } 
 
-html {
+/* html {
     background-color: black
-}
+} */
 
 * {
     background-color: ;
@@ -114,6 +114,10 @@ div {
     left: 770px;
 }
 
+#navigation > ul > li:hover > ul {
+    display: block;
+}
+
 form {
     text-align: center;
     color: white;
@@ -130,6 +134,4 @@ form {
 }
 
 
-#navigation > ul > li:hover > ul {
-    display: block;
-}
+
