@@ -13,7 +13,7 @@
 } */
 
 * {
-    background-color: ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -21,9 +21,9 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     text-align: center;
-    padding: 10px;
-    height: 75px;
-    max-width: 960px;
+    padding: 75px;
+    /* height: 75px; */
+    /* max-width: 960px; */
 }
 
 h2 {
@@ -34,6 +34,7 @@ h2 {
 
 p {
     color: white;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -58,11 +59,10 @@ a {
 
 li:first-child {
     margin-right: 0px;
-    display: inline;
+    /* display: inline; */
 }
 
 div {
-    max-width: 960px;
 }
 
 .blueback {
@@ -79,6 +79,7 @@ div {
     margin: 150px;
     max-width: 960px;
     padding: 50px;
+    margin: auto;
 }
 
 .navfont {
@@ -94,7 +95,6 @@ div {
     top: 0;
     left: 0;
     width: 100%;
-    margin-left: 223px;
 }
 
 
@@ -109,9 +109,8 @@ div {
 #navigation>ul>li>ul {
     position: fixed;
     display: none;
-    background-color: #535353;
     top: 50px;
-    left: 770px;
+    left: 1015px;
 }
 
 #navigation > ul > li:hover > ul {
@@ -129,8 +128,8 @@ form {
 
 .header {
     background-color: white;
-    padding-top: 141px;
     background-color: black;
+    
 }
 
 
