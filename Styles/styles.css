@@ -16,6 +16,12 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    min-height: 100vh;
+}
+
 h1 {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,11 +96,12 @@ div {
 }
 
 #navigation {
-    display: inline-block;
-    position: fixed;
+    /* display: inline-block;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
+    position: sticky;
+    top: 0px;
 }
 
 
