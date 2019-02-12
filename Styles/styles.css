@@ -1,30 +1,30 @@
 /* Whole background image */
 
- html { 
-    background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; 
+html {
+    background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  } 
+}
 
 /* html {
     background-color: black
 } */
 
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Contrail One', cursive;
 }
 
 body {
     display: grid;
+    grid-template-areas: "navigation" "header" "content" "footer";
     grid-template-rows: min-content min-content auto min-content;
     min-height: 100vh;
 }
 
 h1 {
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
     text-align: center;
     padding: 75px;
@@ -34,7 +34,6 @@ h1 {
 
 h2 {
     color: white;
-    font-family: cursive;
     text-align: center;
 }
 
@@ -68,8 +67,7 @@ li:first-child {
     /* display: inline; */
 }
 
-div {
-}
+div {}
 
 .blueback {
     color: white;
@@ -79,13 +77,13 @@ div {
 #content {
     color: white;
     margin: 50px;
+    grid-area: content;
 }
 
 .container {
     margin: 150px;
     max-width: 960px;
-    padding: 50px;
-    margin: auto;
+    margin: 8px;
 }
 
 .navfont {
@@ -102,25 +100,26 @@ div {
     width: 100%; */
     position: sticky;
     top: 0px;
+    grid-area: navigation;
 }
 
-
-
 #navigation>ul>li {
-    display: inline;
+    /* display: inline; */
     position: relative;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 #navigation>ul>li>ul {
-    position: fixed;
+    position: absolute;
     display: none;
     top: 50px;
-    left: 1015px;
+    left: 30px;
 }
 
-#navigation > ul > li:hover > ul {
+#navigation>ul>li:hover>ul {
     display: block;
 }
 
@@ -130,14 +129,35 @@ form {
 }
 
 .homeimg {
-    margin-left: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     background-color: white;
     background-color: black;
-    
 }
 
+#header {
+    grid-area: header;
+}
 
+#footer {
+    grid-area: footer;
+}
 
+#navigation>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(min-width: 800px) {
+    body {
+        grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
+        /* grid-template-rows: min-content auto min-content; */
+        grid-template-columns: minmax(min-content, 15vw) auto;
+    }
+    #navigation>ul {
+        flex-direction: column;
+    }
+}
