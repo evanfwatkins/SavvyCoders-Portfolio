@@ -1,7 +1,8 @@
 /* Whole background image */
 
 html {
-    background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed;
+    /* background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; */
+    background-image: linear-gradient(white, black);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,7 +25,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 45px;
     text-align: center;
     padding: 75px;
@@ -35,6 +36,8 @@ h1 {
 h2 {
     color: white;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 p {
@@ -45,7 +48,7 @@ p {
 
 ul {
     color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
 }
 
@@ -55,6 +58,7 @@ ol {
 
 a {
     color: white;
+    font-size: 25px;
     margin: 5px;
     /* border: solid;
     border-radius: 5px; */
@@ -70,7 +74,7 @@ li:first-child {
 div {}
 
 .blueback {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -87,6 +91,7 @@ div {}
 }
 
 .navfont {
+    color: black;
     text-decoration-color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* position: fixed; */
@@ -94,10 +99,11 @@ div {}
 }
 
 #navigation {
+    background-color: black; 
     /* display: inline-block;
     top: 0;
-    left: 0;
-    width: 100%; */
+    left: 0; */
+    width: 100%;
     position: sticky;
     top: 0px;
     grid-area: navigation;
@@ -113,10 +119,9 @@ div {}
 }
 
 #navigation>ul>li>ul {
-    position: absolute;
     display: none;
     top: 50px;
-    left: 30px;
+    left: 10px;
 }
 
 #navigation>ul>li:hover>ul {
@@ -127,6 +132,14 @@ form {
     text-align: center;
     color: white;
 }
+
+.greeting {
+    color: black;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+
 
 .homeimg {
     display: flex;
@@ -144,6 +157,8 @@ form {
 
 #footer {
     grid-area: footer;
+    display: grid;
+    justify-content: center;
 }
 
 #navigation>ul {
@@ -160,4 +175,5 @@ form {
     #navigation>ul {
         flex-direction: column;
     }
+    
 }

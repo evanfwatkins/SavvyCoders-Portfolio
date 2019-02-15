@@ -36,28 +36,26 @@
     </div>
 
     <div id="content">
-
+        <div class="greeting"> 
+            
+        </div>
         <h1 class="blueback" id="test">
-            Evan's STL Pickups
+            Evan's Portfolio
         </h1>
-        <h2 class="blueback">| Sign up for the Early Release Group Below |</h2>
+        <h2 class="blueback">| Junior Level Developer | Savvy Coder Student |</h2>
         <hr>
 
 
-        <p id="content">Upcoming Drops: April 20th - 2019 | "Spring Season Release"</p>
-
+        <p id="content">Savvy Coders projects in the works</p>
+        
         <!-- TASK: Make a "drop calandar"  -->
 
-        <h2>Drop Calandar:</h2>
+        <h2>Projects</h2>
         <ul>
-            <li> January - 15 - New Year</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <p> January - March 2019 </p>
+            <li>Portfolio Page (information about me and my coding expierince</li>
+            <li>Midnight club Car Meet up club page.</li>
+            <li>Car detailing webb application</li>
         </ul>
 
         <p>STL pickups is a hole in the wall vinatge, hypebeast, clothes, shoes, hats and much more. If you are
@@ -97,15 +95,16 @@
     <!-- Commments are these  -->
 
 <!-- JavaScript Starts here-->
-<script>
-    // capture users response name to a variable
-    // alert box "hello,  + name" 
-//    var userName = window.prompt("Whats your name?")
-//    window.alert("Hello, " + userName)
-//     window.alert(`Hello,  ${userName}`)
-    document.getElementById("test").innerText = "Goodnight World!"
-</script>
 
+<script>
+    var userName = prompt("What's Your Name? ")
+    
+    if (userName === "") {
+        console.log("Blank")
+    }
+    
+    document.querySelector(".greeting").textContent = `Hello ${userName}! Enjoy My Web App`;
+</script>
 
 </body>
 
