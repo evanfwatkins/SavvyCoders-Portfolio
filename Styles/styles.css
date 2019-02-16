@@ -28,12 +28,15 @@ h1 {
     color: black;
     font-size: 45px;
     text-align: center;
-    padding: 75px;
+    padding: 30px;
     /* height: 75px; */
     /* max-width: 960px; */
 }
 
 h2 {
+    /* border: solid;
+    border-bottom-color: black;
+    border-radius: 3px; */
     color: white;
     text-align: center;
     text-decoration: underline;
@@ -48,7 +51,7 @@ p {
 
 ul {
     color: white;
-    /* text-align: center; */
+    text-align: center;
     padding: 0;
 }
 
@@ -70,9 +73,6 @@ li:first-child {
     margin-right: 0px;
     /* display: inline; */
 }
-
-div {}
-
 .blueback {
     color: black;
     text-align: center;
