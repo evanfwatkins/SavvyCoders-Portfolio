@@ -34,13 +34,9 @@ h1 {
 }
 
 h2 {
-    /* border: solid;
-    border-bottom-color: black;
-    border-radius: 3px; */
     color: white;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: black;
+    
 }
 
 p {
@@ -73,10 +69,20 @@ li:first-child {
     margin-right: 0px;
     /* display: inline; */
 }
+
+.apply {
+    margin: auto;
+}
+
 .blueback {
     color: black;
     text-align: center;
 }
+
+.proj {
+    margin: auto
+}
+
 
 #content {
     color: white;
@@ -85,9 +91,7 @@ li:first-child {
 }
 
 .container {
-    margin: 150px;
-    max-width: 960px;
-    margin: 8px;
+    margin: auto;
 }
 
 .navfont {
@@ -133,26 +137,17 @@ form {
     color: white;
 }
 
-.greeting {
-    color: black;
-    display: flex;
-    font-size: 25px;
-    justify-content: center;
-}
-
-
 .homeimg {
     display: flex;
     justify-content: center;
 }
 
-.header {
-    background-color: white;
-    background-color: black;
-}
-
 #header {
-    grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
 }
 
 #footer {

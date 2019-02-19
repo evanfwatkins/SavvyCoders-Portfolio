@@ -1,5 +1,7 @@
 import Navigation from './src/Navigation';
+import Header from './src/Header';
 import Content from './src/Content';
+import Footer from './src/Footer';
 
 var originalContent = document.body.innerHTML;
 var name;
@@ -14,13 +16,15 @@ function blankChecker(){
 function pickName(){
     name = prompt('Please enter your name');
     blankChecker();
-    document.querySelector('.greeting').textContent = `Hello ${name}! Welcome to my web app`;
+    document.querySelector('#header').textContent = `Hello ${name}! Welcome to my web app`;
 }
 
 pickName();
 
-// document.body.innerHTML = `
-// ${originalContent}
-// ${Navigation}
-// ${Content}
-// `;
+document.body.innerHTML = `
+${originalContent}
+${Navigation}
+${Header}
+${Content}
+${Footer}
+`;
