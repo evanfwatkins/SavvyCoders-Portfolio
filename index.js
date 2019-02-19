@@ -1,3 +1,6 @@
+import Navigation from './src/Navigation';
+
+var originalContent = document.body.innerHTML;
 var name;
 
 function blankChecker(){
@@ -14,3 +17,8 @@ function pickName(){
 }
 
 pickName();
+
+document.body.innerHTML = `
+${Navigation}
+${originalContent}
+`;
