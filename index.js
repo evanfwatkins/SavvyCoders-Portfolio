@@ -1,4 +1,5 @@
 import Navigation from './src/Navigation';
+import Content from './src/Content';
 
 var originalContent = document.body.innerHTML;
 var name;
@@ -18,7 +19,8 @@ function pickName(){
 
 pickName();
 
-document.body.innerHTML = `
-${Navigation}
-${originalContent}
-`;
+// document.body.innerHTML = `
+// ${originalContent}
+// ${Navigation}
+// ${Content}
+// `;
