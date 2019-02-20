@@ -19,12 +19,11 @@ function pickName(){
     document.querySelector('#header').textContent = `Hello ${name}! Welcome to my web app`;
 }
 
-pickName();
-
 document.body.innerHTML = `
-${originalContent}
 ${Navigation}
 ${Header}
 ${Content}
 ${Footer}
+${originalContent}
 `;
+pickName();
