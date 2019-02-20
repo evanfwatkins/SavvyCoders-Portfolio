@@ -1,4 +1,5 @@
-export default `
+export default function Navigation(){
+    return `
     <div id="navigation">
     <ul>
         <li class="navfont"><a href="index.html">Home</a></li>
@@ -6,12 +7,13 @@ export default `
         <li class="navfont"><a href="apply/index.html">Apply</a></li>
         <li class="navfont"><a href="projects/index.html">Projects</a>
             <ul>
-                <li><a href=""></a>First</li>
-                <li><a href=""></a>Second</li>
-                <li><a href=""></a>Third</li>
+                <li><a href="">First</a></li>
+                <li><a href="">Second</a></li>
+                <li><a href="">Third</a></li>
             </ul>
         </li>
 
     </ul>
     </div>
 `;
+}

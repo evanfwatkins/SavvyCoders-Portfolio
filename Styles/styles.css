@@ -17,7 +17,7 @@ html {
     font-family: 'Contrail One', cursive;
 }
 
-body {
+#root {
     display: grid;
     grid-template-areas: "navigation" "header" "content" "footer";
     grid-template-rows: min-content min-content auto min-content;
@@ -137,9 +137,11 @@ form {
     color: white;
 }
 
-.homeimg {
+img {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
 }
 
 #header {
@@ -162,7 +164,7 @@ form {
 }
 
 @media(min-width: 800px) {
-    body {
+    #root {
         grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
         /* grid-template-rows: min-content auto min-content; */
         grid-template-columns: minmax(min-content, 15vw) auto;

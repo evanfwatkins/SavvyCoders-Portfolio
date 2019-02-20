@@ -2,28 +2,15 @@ import Navigation from './src/Navigation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
+import pickName from './src/Greeter';
 
-var originalContent = document.body.innerHTML;
-var name;
+var root = document.querySelector('#root');
 
-function blankChecker(){
-    if(name === ''){
-        name = prompt('Dont leave this blank, Please enter your name');
-        blankChecker();
-    }
-}
-
-function pickName(){
-    name = prompt('Please enter your name');
-    blankChecker();
-    document.querySelector('#header').textContent = `Hello ${name}! Welcome to my web app`;
-}
-
-document.body.innerHTML = `
-${Navigation}
-${Header}
-${Content}
-${Footer}
-${originalContent}
+root.innerHTML = `
+${Navigation()}
+${Header('Welcome to Ny Saavy Coders website!')}
+${Content()}
+${Footer()}
 `;
+
 pickName();
