@@ -9,10 +9,6 @@ html {
     background-size: cover;
 }
 
-/* html {
-    background-color: black
-} */
-
 * {
     font-family: 'Contrail One', cursive;
 }
@@ -29,14 +25,11 @@ h1 {
     font-size: 45px;
     text-align: center;
     padding: 30px;
-    /* height: 75px; */
-    /* max-width: 960px; */
 }
 
 h2 {
     color: white;
     text-align: center;
-    
 }
 
 p {
@@ -83,7 +76,6 @@ li:first-child {
     margin: auto
 }
 
-
 #content {
     color: white;
     margin: 50px;
@@ -103,7 +95,7 @@ li:first-child {
 }
 
 #navigation {
-    background-color: black; 
+    background-color: black;
     /* display: inline-block;
     top: 0;
     left: 0; */
@@ -139,14 +131,13 @@ form {
 
 img {
     display: flex;
-    align-items: center;
+    justify-content: center;
     height: 100px;
     width: 100px;
 }
 
+
 #header {
-    background-color: black;
-    color: white;
     display: flex;
     font-size: 25px;
     justify-content: center;
@@ -172,5 +163,4 @@ img {
     #navigation>ul {
         flex-direction: column;
     }
-    
 }

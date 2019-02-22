@@ -12,6 +12,6 @@ export default function pickName(){
         blankChecker();
     }
     else{
-        document.querySelector('#header').textContent = `Hello ${name}! Welcome to my web app`;
+        document.querySelector('#header').textContent = `Hey ${name}, Welcome to my web app`;
     }
 }

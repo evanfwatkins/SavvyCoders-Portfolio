@@ -4,6 +4,16 @@ export default function Content(){
     <h1 class="blueback">
         Evan's Portfolio
     </h1>
+    
+    <div>
+    <button id="test"> Click Me! </button>
+    </div>
+
+
+    <div class="homeimg">
+        <img src="https://scontent-ort2-2.cdninstagram.com/vp/1fe3199a285889d6578a20f17732cb26/5CEE88EE/t51.2885-15/e35/29094692_1849539155340041_8624714867795820544_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com"
+            alt="Evan under a rock">
+    </div>
 
     <div class="greeting">
         <h2 class="fizzBuzz"></h2>
@@ -14,7 +24,7 @@ export default function Content(){
 
 
     <p id="content">Savvy Coders projects in the works</p>
-
+    
     <!-- TASK: Make a "drop calandar"  -->
 
     <h2>Projects</h2>
@@ -25,9 +35,5 @@ export default function Content(){
         <li>Car detailing webb application</li>
     </ul>
 
-    <div class="homeimg">
-        <img src="https://scontent-ort2-2.cdninstagram.com/vp/1fe3199a285889d6578a20f17732cb26/5CEE88EE/t51.2885-15/e35/29094692_1849539155340041_8624714867795820544_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com"
-            alt="Evan under a rock">
-    </div>
 `;
 }
