@@ -4,60 +4,61 @@ import Content from './src/Content';
 import Footer from './src/Footer';
 // import pickName from './src/Greeter';
 
-// Create a STATE object
-var home = {
-    'title': 'Welcome to My Saavy Coders website!'
-};
-
-var blog = {
-    'title': 'Check out the Blogs'
-};
-
-var apply = {
-    'title': 'Please apply for something'
-};
-
-var projects = {
-    'title': 'These projects boii!'
+// State holds info that the render function needs to do its job
+var State = {
+    'Home': {
+        // this is a nested object
+        'links': [ 'Blog','Apply','Projects' ],
+        'title': 'My SavvyCoders Portfolio'
+    },
+    'Blog': {
+        'links': [ 'Home','Apply','Projects' ],
+        'title': 'Check out the Blogs'
+    },
+    
+    'Apply': {
+        'links': [ 'Home','Blog','Projects' ],
+        'title': 'Please apply for something'
+    },
+    
+    'Projects': {
+        'links': [ 'Home','Blog','Apply' ],
+        'title': 'These projects boii!'
+    }
 };
 
 var root = document.querySelector('#root');
+var render;
 
-// Create a rendering function //
-function render(state){
-    root.innerHTML = `
-    ${Navigation(state)}
-    ${Header(state.title)}
-    ${Content(state)}
-    ${Footer(state)}
-    `;
+// Function Decleration
+function navHandler(event){
+    event.preventDefault();
+
+    render(State[event.target.textContent]);
 }
+    
+render = function ender(state){
+    var links;
+    var i = 0;
 
-render(home);
+    // grab each component and update #roots HTML with the generated HTML that works with State
+    root.innerHTML = `
+        ${Navigation(state)}
+        ${Header(state.title)}
+        ${Content(state)}
+        ${Footer(state)}
+    `;
 
-document.querySelector('#navigation li:first-child').addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(e.target.href);
-    render(home);
-});
+    links = document.querySelectorAll('#navigation > ul > li > a');
 
-document.querySelector('#navigation li:nth-child(2)').addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(e.target.href);
-    render(blog);
-});
+    //  Run a while loop for as long as the Length of links is.
+    while(i < links.length){
+        // change the index
+        links[i].addEventListener('click', navHandler);
+        
+        i++;
+    }
+};
 
-document.querySelector('#navigation li:nth-child(3)').addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(e.target.href);
-    render(apply);
-});
-
-document.querySelector('#navigation li:nth-child(4)').addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(e.target.href);
-    render(projects);
-});
-
-// Username input function
+render(State.Home);
 // pickName();

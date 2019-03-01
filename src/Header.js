@@ -1,7 +1,7 @@
-export default function Header(title){
+export default function Header(state){
     return `
     <div id="header">
-        <h1>${title}</h1>
+        <h1>${state}</h1>
         </div>
 `;
 }

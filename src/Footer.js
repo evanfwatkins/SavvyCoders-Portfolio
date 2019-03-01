@@ -2,7 +2,7 @@ export default function footer(){
     return `
     <div id="footer">
 
-    <ul>
+    <ul class="linq">
         <li>
             <i class="fab fa-github"></i><a href="https://github.com/evanfwatkins">Git Hub</a>
         </li>

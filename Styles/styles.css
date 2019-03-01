@@ -2,7 +2,7 @@
 
 html {
     /* background: url(https://visittheloop.com/wp-content/uploads/2016/11/delmar-loop-at-night.jpg) no-repeat center center fixed; */
-    background-image: linear-gradient(white, black);
+    background-image: auto(white, black);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,18 +28,18 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 p {
-    color: white;
+    color: black;
     font-size: 20px;
     text-align: center;
 }
 
 ul {
-    color: white;
+    color: black;
     text-align: center;
     padding: 0;
 }
@@ -76,13 +76,23 @@ li:first-child {
     margin: auto
 }
 
+.linq {
+    color: black;
+}
+
+.projList {
+    color: black;
+}
+
 #content {
-    color: white;
+    color: black;
     margin: 50px;
     grid-area: content;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
 
@@ -94,24 +104,30 @@ li:first-child {
     width: 100%;
 }
 
+#imgdiv {
+    display: flex;
+    justify-content: center;
+}
+
 #navigation {
     background-color: black;
-    /* display: inline-block;
+    /* display: flex; */
     top: 0;
-    left: 0; */
+    left: 0;
     width: 100%;
     position: sticky;
     top: 0px;
     grid-area: navigation;
+
 }
 
 #navigation>ul>li {
-    /* display: inline; */
+    display: block;
     position: relative;
     left: 0;
     top: 0;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 
 #navigation>ul>li>ul {
@@ -126,14 +142,14 @@ li:first-child {
 
 form {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 img {
     display: flex;
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 415px;
+    width: 415px;
 }
 
 
@@ -145,8 +161,9 @@ img {
 
 #footer {
     grid-area: footer;
-    display: grid;
+    display: flex;
     justify-content: center;
+    color: black;
 }
 
 #navigation>ul {
