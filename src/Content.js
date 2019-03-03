@@ -2,7 +2,7 @@ export default function Content(){
     return `
     <div id="content">
     <h1 class="blueback">
-        Evan's SavvyCoders Portfolio
+        Evan Watkins
     </h1>
 
     <div id="imgdiv">
@@ -16,19 +16,12 @@ export default function Content(){
 
     <h2 class="blueback">| Junior Level Developer | Savvy Coder Student |</h2>
     <hr>
-
-
-    <p id="content">Savvy Coders projects in the works</p>
     
     <!-- TASK: Make a "drop calandar"  -->
 
-    <h2>Projects</h2>
-    <p> January - March 2019 </p>
-    <ul class="projList">
-        <li>Portfolio Page (information about me and my coding expierince</li>
-        <li>Midnight club Car Meet up club page.</li>
-        <li>Car detailing webb application</li>
-    </ul>
+    <h2>Here are some of my interests:</h2>
+    <p>I Snowboard, I like to build computers, I play games when I have the time, I like writting code and learning new material about code. I am currently seeking an intern or a start job at a tech company</p>
 
+    <h2>Links To My Social Media</h2>
 `;
 }
