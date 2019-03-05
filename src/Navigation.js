@@ -3,7 +3,7 @@ function linksBuilder(linksArr){
     var linksHTML = '';
     
     while(i < linksArr.length){
-        linksHTML += `<li><a href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
+        linksHTML += `<li><a data-navigo href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
         i++;
     }
 
