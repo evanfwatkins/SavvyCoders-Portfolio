@@ -32,11 +32,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
 p {
     color: black;
     font-size: 20px;
     text-align: center;
-    margin: 50px;
+    margin: 15px;
     border: solid;
     border-radius: 5px;
 
@@ -58,7 +63,6 @@ a {
     margin: 5px;
     /* border: solid;
     border-radius: 5px; */
-    padding: 10px;
     text-decoration: none;
 }
 
@@ -81,7 +85,12 @@ li:first-child {
 }
 
 .linq {
+    display: flex;
+    justify-content: center;    
     color:white;
+    background-color: gray;
+    padding-top: 3px;
+    margin-bottom: 5px;
 }
 
 .projList {

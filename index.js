@@ -9,10 +9,8 @@ import Navigo from 'navigo';
 
 var router = new Navigo(location.origin);
 var root = document.querySelector('#root');
-var render;
 
-
-render = function ender(state){
+function render(state){
     root.innerHTML = `
     ${Navigation(state)}
     ${Header(state.title)}
@@ -21,7 +19,7 @@ render = function ender(state){
     `;
 
     router.updatePageLinks();
-};
+}
 
 function navHandler(params){
     var destination = startCase(params.page);
