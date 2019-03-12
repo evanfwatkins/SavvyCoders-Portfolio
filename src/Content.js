@@ -1,4 +1,6 @@
-export default function Content(){
+export default function Content(posts){
+    console.log('content says', posts);
+
     return `
     <div id="content">
     <h1 class="blueback">
@@ -35,7 +37,7 @@ export default function Content(){
     <!-- TASK: Make a "drop calandar"  -->
 
     <h2>Here are some of my interests:</h2>
-    <p>I Snowboard, I like to build computers, I play games when I have the time, I like writting code and learning new material about code. I am currently seeking an intern or a start job at a tech company</p>
+    <p>I Snowboard, I like to build computers, I play games when I have the time, I like writting code and learning new material about code. I am currently seeking an intern or a starting job at a tech company</p>
 
 `;
 }
