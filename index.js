@@ -12,24 +12,31 @@ var router = new Navigo(location.origin);
 var root = document.querySelector('#root');
 
 function render(state){
-    console.log(state.links);
     if(!state.links.includes('Blog')){
         state.posts = [];
-    
-        axios
-            .get('https://jsonplaceholder.typicode.com/posts').then((response) => console.log(response))
-            .then((response) => {
-                state.posts = response.data;
+        console.log('blog was cliedked');
 
+        axios
+            .get('https://jsonplaceholder.typicode.com/posts')
+            .then((response) => {
+                // response.data is an Array of length 100 objects
+                state.posts = response.data;
+                console.log(state.posts);
                 root.innerHTML = `
                     ${Navigation(state.links)}
                     ${Header(state.title)}
                     ${Content(state.posts)}
                     ${Footer(state)}
-                    `;
+                `;
             });
     }
 
+    root.innerHTML = `
+                    ${Navigation(state.links)}
+                    ${Header(state.title)}
+                    ${Content(state)}
+                    ${Footer(state)}
+                `;
     router.updatePageLinks();
 }
 
@@ -43,6 +50,3 @@ router
     .on('/:page', navHandler)
     .on('/', () => navHandler({ 'page': 'Home' }))
     .resolve();
-
-
-// pickName();
