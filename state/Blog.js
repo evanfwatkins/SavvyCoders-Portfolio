@@ -1,4 +1,5 @@
 export default {
+    'body': 'Blog',
     'links': [ 'Home', 'Apply', 'Projects' ],
-    'title': 'Read or Post Blogs'
+    'title': 'Post or Read Blogs'
 };
