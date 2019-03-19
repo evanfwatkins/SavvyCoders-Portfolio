@@ -25,7 +25,7 @@ function render(state){
                 root.innerHTML = `
                     ${Navigation(state.links)}
                     ${Header(state.title)}
-                    ${Content(state.posts)}
+                    ${Content(state)}
                     ${Footer(state)}
                 `;
             });
