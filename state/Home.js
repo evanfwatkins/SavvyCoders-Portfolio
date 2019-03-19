@@ -1,4 +1,4 @@
 export default {
-    'links': [ 'Home', 'Blog', 'Apply', 'Projects' ],
+    'links': [ 'Blog', 'Apply', 'Projects' ],
     'title': 'My SavvyCoders Portfolio'
 };
