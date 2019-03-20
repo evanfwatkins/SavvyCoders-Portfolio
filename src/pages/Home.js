@@ -17,9 +17,6 @@ export default function Home(){
     <hr>
     
     <!-- TASK: Make a "drop calandar"  -->
-
-    <h2>Here are some of my interests:</h2>
-    <p>I Snowboard, I like to build computers, I play games when I have the time, I like writting code and learning new material about code. I am currently seeking an intern or a starting job at a tech company</p>
     <div
         <ul class="linq">
             <li class="linq">
@@ -35,5 +32,8 @@ export default function Home(){
             </li>
         </ul>
     </div>
+    <h2>Here are some of my interests:</h2>
+    <p>I Snowboard, I like to build computers, I play games when I have the time, I like writting code and learning new material about code. I am currently seeking an intern or a starting job at a tech company</p>
+    
     `;
 }

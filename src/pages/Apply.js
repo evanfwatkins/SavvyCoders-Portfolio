@@ -18,7 +18,8 @@ export default function Apply(){
         <br>
         <br>
 
-        <textarea rows="4" cols="50">Enter Message:</textarea>
+        <label for="text">Enter Message:</label>
+        <textarea rows="4" cols="50"></textarea>
         <br>
         <br>
 
